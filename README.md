@@ -15,6 +15,6 @@ google-services.json (android/app and android/app/src) and firebase_options.dart
 * If the the player scores above 50 points, their name can be added to the leaderboard
 
 ### Leaderboard
-The leaderboard can be accessed by pressed the icon in the top-corner corner of the screen.  
+The leaderboard can be accessed by pressed the icon in the top-corner corner of the screen.
 * The top 10 scores will be display on leaderboard
 * There is a refresh leaderboard button in the top-right corner
