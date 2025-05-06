@@ -25,7 +25,7 @@ class MemoryGameApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Memory Game',
+      title: 'Sequence Tap',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -505,7 +505,7 @@ class _MemoryGameScreenState extends State<MemoryGameScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Memory Game'),
+        title: const Text('Sequence Tap'),
         centerTitle: true,
         actions: [
           // Button to navigate to the leaderboard screen
