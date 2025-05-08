@@ -19,7 +19,7 @@ void main() async {
 
 /// Main application widget that sets up the theme and routes
 class MemoryGameApp extends StatelessWidget {
-  const MemoryGameApp({Key? key}) : super(key: key);
+  const MemoryGameApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,9 +69,7 @@ class FirebaseService {
       // Get current user or sign in anonymously if no user exists
       // Will probably keep all users anonymous
       User? user = getCurrentUser();
-      if (user == null) {
-        user = await signInAnonymously();
-      }
+      user ??= await signInAnonymously();
 
       if (user == null) return;
 
@@ -140,7 +138,7 @@ class FirebaseService {
 
 // Game leaderboard screen
 class LeaderboardScreen extends StatefulWidget {
-  const LeaderboardScreen({Key? key}) : super(key: key);
+  const LeaderboardScreen({super.key});
 
   @override
   State<LeaderboardScreen> createState() => _LeaderboardScreenState();
@@ -251,7 +249,7 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
 
 // Main game screen where the memory game is played
 class MemoryGameScreen extends StatefulWidget {
-  const MemoryGameScreen({Key? key}) : super(key: key);
+  const MemoryGameScreen({super.key});
 
   @override
   State<MemoryGameScreen> createState() => _MemoryGameScreenState();
