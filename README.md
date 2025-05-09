@@ -1,6 +1,6 @@
 # Sequence Memeory Game
 A simple memory game where the player has to remember the sequence of tiles to click on a 3x3 grid.  
-Currently on the Google Play Store under the name "Sequence Tap".
+Currently on the Google Play Store under the name [Sequence Tap](https://play.google.com/store/apps/details?id=com.school.memory_game).
 
 ## Getting Started
 google-services.json (android/app and android/app/src) and firebase_options.dart were omitted from repo.
